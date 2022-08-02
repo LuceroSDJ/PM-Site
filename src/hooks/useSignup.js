@@ -28,7 +28,7 @@ export const useSignup = () => {
             const uploadPath = `thumbnail/${response.user.uid}/${thumbnail.name}`;
             // ===== upload the image --@return An object that can be used to monitor and manage the upload.
             const imgUploadedObj = await projectStorage.ref(uploadPath).put(thumbnail);
-            // ===== extract the url img from object rreturned by line 29 chained methods
+            // ===== extract the url img from object returned by line 29 chained methods
             const imgURL = await imgUploadedObj.ref.getDownloadURL();
 
             //=== 3.)add display name and photoURL if new user is created successfully.
@@ -66,7 +66,7 @@ export const useSignup = () => {
 
     //-------------- clean up function ---------------------
     useEffect(() => {
-        // no effect
+        setIsCancelled(false);
         return () => setIsCancelled(true);
     }, [])
 

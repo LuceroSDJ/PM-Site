@@ -17,7 +17,8 @@ export const useLogout = () => {
         try {
             const { uid } = user;
             await projectFirestore.collection("users").doc(uid).update({ online: false });
-            await projectAuth.signOut(); //don't we need to provide a user's id?????????
+            //Sign out the current user
+            await projectAuth.signOut(); 
 
             //--------------- dispatch logout action ------------
             dispatch({type: "LOGOUT"});

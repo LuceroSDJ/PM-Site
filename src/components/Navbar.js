@@ -4,6 +4,8 @@ import { useAuthContext } from "../hooks/useAuthContext";
 //styles
 import "./Navbar.css";
 import Temple from "../assets/temple.svg";
+import Team from "../assets/team.svg";
+import TeamIcon from "../assets/icons8-team-64.png";
 
 export default function Navbar() {
     const { logout, isPending } = useLogout();
@@ -12,8 +14,8 @@ export default function Navbar() {
         <div className="navbar">
             <ul>
                 <li className="logo">
-                    <img src={Temple} alt="logo" />
-                    <span>Collab</span>
+                    <img src={TeamIcon} alt="logo" />
+                    <span>PM Web App</span>
                 </li>
                 {/* conditional render navbar links  */}
                 {!user && (

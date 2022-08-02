@@ -1,0 +1,11 @@
+.loginContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginLandingImg {
+    width: 40%;
+}
+.loginLandingImg img {
+    width: 100%;
+}

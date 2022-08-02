@@ -5,14 +5,15 @@ import "firebase/compat/auth";
 import "firebase/compat/storage";
 
 //REPLACE WITH FIREBASE CONGIG OBJECT PROVIDED IN YOUR PROJECT SETTINGS
-const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_authDomain",
-    projectId: "YOUR_projectId",
-    storageBucket: "YOUR_storageBucket",
-    messagingSenderId: "YOUR_messagingSenderId",
-    appId: "YOUR_appId"
-};
+// const firebaseConfig = {
+//     apiKey: "YOUR_API_KEY",
+//     authDomain: "YOUR_authDomain",
+//     projectId: "YOUR_projectId",
+//     storageBucket: "YOUR_storageBucket",
+//     messagingSenderId: "YOUR_messagingSenderId",
+//     appId: "YOUR_appId"
+// };
+
   
 //init firebase
 firebase.initializeApp(firebaseConfig);
